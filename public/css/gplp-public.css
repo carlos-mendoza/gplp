@@ -95,12 +95,22 @@ body {
 
 }
 .gplp-form input.button {
+    background-color: #0088c1;
+    border: medium none;
+    border-radius: 5px;
+    color: #fff;
+    text-transform: uppercase;
+    width: 100%;
+    padding: 15px;
+}
+.gplp-form input.button:hover {
     background-color: #005d84;
     border: medium none;
     border-radius: 5px;
     color: #fff;
     text-transform: uppercase;
     width: 100%;
+    cursor: pointer;
 }
 .gplp-form .wpcf7-response-output {
     clear: both;

@@ -69,15 +69,15 @@ body {
     padding-left: 40px;
 }
 .gplp-form form {
-    width: 85%;
-    margin: 0 auto;
+    margin: 0 auto 0 40px;
+    width: 100%;;
 }
 .gplp-form .row {
     width: 90%;
 }
 .gplp-form .row div {
     float: left;
-    width: 50%;
+    width: 49%;
 }
 .gplp-form .wide div {
     width: 100%;
@@ -91,8 +91,18 @@ body {
     padding: 10px;
     width: 100%;
 }
+.gplp-form .row div input {
+    width: 85%;
+}
+.gplp-form .row div select  {
+    width: 94%;
+}
 .gplp-form .wide input {
-
+    width: 90%;
+}
+.gplp-form .wide input.button {
+    width: 95%;
+    margin: 20px 5px 50px;
 }
 .gplp-form input.button {
     background-color: #0088c1;
@@ -100,7 +110,6 @@ body {
     border-radius: 5px;
     color: #fff;
     text-transform: uppercase;
-    width: 100%;
     padding: 15px;
 }
 .gplp-form input.button:hover {
@@ -109,11 +118,11 @@ body {
     border-radius: 5px;
     color: #fff;
     text-transform: uppercase;
-    width: 100%;
     cursor: pointer;
 }
 .gplp-form .wpcf7-response-output {
     clear: both;
+    max-width: 80%;
 }
 .gplp-features {
     background-color: #fbfbfb;
@@ -202,6 +211,7 @@ footer a:hover {
     width: 48%;
 }
 
+
 @media only screen and (max-width: 40em) { 
 
     .gplp-header p {
@@ -241,6 +251,10 @@ footer a:hover {
         max-width: 50%;
     }
 
+    .gplp-form form {
+        margin: 0 auto 0 20px;
+        width: 100%;
+    }
     .gplp-form h3 {
         font-size: 1rem;
         padding-left: 0;
@@ -252,6 +266,13 @@ footer a:hover {
         width: 100%;
     }
 
+    .gplp-form .wide input {
+        width: 85%;
+    }
+    .gplp-form .wpcf7-response-output {
+        margin-bottom: 35px;
+        max-width: 70%;
+    }
     .gplp-feature {
         border-left: 1px solid #eeeeee;
         display: inline-block;

@@ -1,0 +1,284 @@
+/**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ */
+
+body {
+	margin: 0;
+}
+.skip-link {
+	display: none;
+}
+.gplp-header {
+	background-color: #efeff3;
+	color: #005d84;
+	font-family: 'Signika', sans-serif;
+}
+.gplp-header p {
+    font-size: 2.5rem;
+    line-height: 30px;
+    margin: 0;
+    padding: 40px 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+.gplp-title {
+	color: #fff;
+	background: url('../img/title_bg.jpg');
+	text-align: center;
+	font-family: 'Signika', sans-serif;
+}
+.gplp-title .entry-title {
+    font-size: 2.5rem;
+    font-weight: 100;
+    margin: 0;
+    padding-bottom: 5px;
+    padding-top: 70px;
+}
+.gplp-subtitle {
+    color: #d0fdfd;
+    font-size: 1rem;
+    font-weight: 100;
+    margin: 0;
+    padding-bottom: 70px;
+    padding-top: 5px;
+}
+.gplp-main-content {
+    margin: 0 auto;
+    max-width: 80%;
+    font-family: 'Signika', sans-serif;
+}
+.gplp-image{
+    bottom: -30px;
+    display: inline-block;
+    float: left;
+    margin-bottom: -55px;
+    position: relative;
+    top: -30px;
+}
+.gplp-image img {
+    border: 5px solid #fff;
+    border-radius: 5px;
+}
+.gplp-form {
+    display: grid;
+    background-color: #f7fccc;
+}
+.gplp-form h3 {
+    font-size: 2rem;
+    padding-left: 40px;
+}
+.gplp-form form {
+    width: 85%;
+    margin: 0 auto;
+}
+.gplp-form .row {
+    width: 90%;
+}
+.gplp-form .row div {
+    float: left;
+    width: 50%;
+}
+.gplp-form .wide div {
+    width: 100%;
+}
+.gplp-form .row input, .gplp-form .row select  {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    color: #999;
+    font-size: 1.15rem;
+    margin: 5px;
+    padding: 10px;
+    width: 100%;
+}
+.gplp-form .wide input {
+
+}
+.gplp-form input.button {
+    background-color: #005d84;
+    border: medium none;
+    border-radius: 5px;
+    color: #fff;
+    text-transform: uppercase;
+    width: 100%;
+}
+.gplp-form .wpcf7-response-output {
+    clear: both;
+}
+.gplp-features {
+    background-color: #fbfbfb;
+    border-bottom: 1px solid #ebebeb;
+    border-top: 1px solid #e6e6e6;
+    color: #333333;
+    padding: 60px 10px;
+    font-family: 'Signika', sans-serif;
+    clear: both;
+}
+
+.gplp-feature {
+    border-left: 1px solid #eeeeee;
+    display: inline-block;
+    padding: 0 10px;
+    text-align: center;
+    width: 30%;
+    font-weight: 100;
+}
+.gplp-feature i {
+    color: #a0a0a0;
+    font-size: 2rem;
+    margin-top: 15px;
+}
+.gplp-feature h3 {
+	color: #007fb4;
+    font-size: 1.25rem;
+    font-weight: 400;
+	margin: 20px 0;
+}
+.gplp-feature p {
+    color: #7c7c7c;
+    margin: 0 30px;
+    padding-bottom: 20px;
+}
+.gplp-social-links {
+	text-align: center;
+	font-weight: 100;
+    font-family: 'Signika', sans-serif;
+}
+.gplp-social-link {
+    display: inline-block;
+    font-size: 0.85rem;
+    padding: 48px 0;
+    width: 22%;
+}
+.gplp-social-link i {
+	font-size: 2rem;
+}
+.gplp-social-link a {
+    color: #323232;
+    font-size: 0.6rem;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.gplp-social-link a:hover {
+	color: #007fb4;
+}
+footer {
+	background-color: #143839;
+	color: #919b9c;
+    font-family: 'Signika', sans-serif;
+}
+footer a {
+	color: #98bfbf;
+	text-decoration: none;
+}
+footer a:hover {
+	color: #fff;
+}
+.gplp-footer-menu {
+	display: inline-block;
+	width: 49.5%;
+}
+.gplp-footer-menu li {
+    display: inline-block;
+    font-size: 0.75rem;
+    padding: 30px 20px;
+    text-transform: uppercase;
+}
+.gplp-copyright {
+    display: inline-block;
+    font-size: 0.75rem;
+    font-weight: 100;
+    text-align: right;
+    width: 48%;
+}
+
+@media only screen and (max-width: 40em) { 
+
+    .gplp-header p {
+        font-size: 1.5rem;
+        line-height: 30px;
+        margin: 0;
+        padding: 20px 0;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    .gplp-title .entry-title {
+        font-size: 1.5rem;
+        font-weight: 100;
+        margin: 0;
+        padding-bottom: 5px;
+        padding-top: 70px;
+    }
+
+    .gplp-main-content {
+        font-family: "Signika",sans-serif;
+        width: 100%;
+    }
+    
+    .gplp-image {
+        bottom: -30px;
+        display: inline-block;
+        float: none;
+        margin-bottom: -55px;
+        position: relative;
+        text-align: center;
+        top: -30px;
+    }
+    .gplp-image img {
+        border: 5px solid #fff;
+        border-radius: 5px;
+        max-width: 50%;
+    }
+
+    .gplp-form h3 {
+        font-size: 1rem;
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .gplp-form .row div {
+        float: none;
+        width: 100%;
+    }
+
+    .gplp-feature {
+        border-left: 1px solid #eeeeee;
+        display: inline-block;
+        font-weight: 100;
+        padding: 0 10px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .gplp-social-link {
+        display: inline-block;
+        font-size: 0.85rem;
+        padding: 48px 0;
+        width: 100%;
+    }
+
+    .gplp-footer-menu {
+        display: inline-block;
+        width: 100%;
+    }
+
+    .gplp-footer-menu ul {
+        padding: 0;        
+    } 
+    .gplp-footer-menu li {
+        display: block;
+        font-size: 0.75rem;
+        padding: 10px 20px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+
+    .gplp-copyright {
+        display: inline-block;
+        font-size: 0.75rem;
+        font-weight: 100;
+        text-align: center;
+        width: 100%;
+    }
+}

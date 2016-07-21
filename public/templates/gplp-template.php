@@ -26,17 +26,17 @@ load_template(dirname( __FILE__ ) . '/header-gplp.php', true);
 						<h2 class="gplp-subtitle"><?php echo trim(get_field('subtitle')); ?></h2>
 					</header>
 					<div class="gplp-main-content">
-						<div class="gplp-image">
-							<?php
-							$gplp_image = get_field('image');
-							if ($gplp_image) {
-								?>
-								<img src="<?php echo $gplp_image['url'];?>" alt="<?php echo $gplp_image['alt'];?>">
-								<?php
-							}
-							?>
-						</div><!-- .gplp-image -->
 						<div class="gplp-form">
+							<div class="gplp-image">
+								<?php
+								$gplp_image = get_field('image');
+								if ($gplp_image) {
+									?>
+									<img src="<?php echo $gplp_image['url'];?>" alt="<?php echo $gplp_image['alt'];?>">
+									<?php
+								}
+								?>
+							</div><!-- .gplp-image -->
 							<h3>Download Ebook Here</h3>
 							<?php echo do_shortcode(trim(get_field('form'))); ?>
 						</div>
@@ -59,10 +59,24 @@ load_template(dirname( __FILE__ ) . '/header-gplp.php', true);
 						for ($sl=1; $sl<=4; $sl++) {
 							?>
 							<div class="gplp-social-link">
-								<a href="<?php echo trim(get_field('social_link_'.$sl)); ?>">
+								<?php 
+								$social_link = trim(get_field('social_link_'.$sl));
+								if ($social_link) {
+								?>
+									<a href="<?php echo esc_url($social_link); ?>">
 									<i class="fa fa-<?php echo trim(get_field('social_link_'.$sl.'_icon')); ?>" aria-hidden="true"></i> 
 									<?php echo " (".trim(get_field('social_link_'.$sl.'_title')).") "; ?>
 								</a>
+							<?php
+								} else {
+								?>
+									<a href="#">
+										<i class="fa fa-<?php echo trim(get_field('social_link_'.$sl.'_icon')); ?>" aria-hidden="true"></i> 
+										<?php echo " (".trim(get_field('social_link_'.$sl.'_title')).") "; ?>
+									</a>
+								<?php
+								}
+								?>
 							</div>
 							<?php
 						}

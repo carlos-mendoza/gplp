@@ -74,16 +74,18 @@ body:not(.custom-background-image)::before, body:not(.custom-background-image)::
     padding-top: 5px;
 }
 .gplp-main-content {
+    background-color: #f7fccc;
+    font-family: "Signika",sans-serif;
     margin: 0 auto;
     max-width: 80%;
-    font-family: 'Signika', sans-serif;
+    position: relative;
 }
 .gplp-image{
     bottom: -30px;
     display: inline-block;
     float: left;
     margin-bottom: -100px;
-    position: relative;
+    position: absolute;
     top: -30px;
 }
 .gplp-image img {
@@ -96,7 +98,13 @@ body:not(.custom-background-image)::before, body:not(.custom-background-image)::
 }
 .gplp-form h3 {
     font-size: 2rem;
-    padding-left: 40px;
+    margin: 0 0 0 40%;
+    padding: 20px;
+}
+.gplp-form div.wpcf7 {
+    background-color: #f7fccc;
+    margin: 0 0 0 40%;
+    padding: 0;
 }
 .gplp-form form {
     margin: 0 auto 0 40px;
@@ -272,7 +280,7 @@ footer a:hover {
 }
 
 
-@media only screen and (max-width: 40em) { 
+@media only screen and (max-width: 64em) { 
 
     .gplp-header p {
         font-size: 1.5rem;
@@ -307,12 +315,13 @@ footer a:hover {
     .gplp-image {
         bottom: -30px;
         display: inline-block;
-        float: left;
-        margin-bottom: -55px;
-        position: relative;
+        float: none;
+        height: auto;
+        margin: 0 auto;
+        position: absolute;
         text-align: center;
         top: -30px;
-        height: 0;
+        width: 100%;
     }
     .gplp-image img {
         border: 5px solid #fff;
@@ -326,23 +335,33 @@ footer a:hover {
         padding-top: 30%;
     }
     .gplp-form form {
-        margin: 0 auto 0 20px;
-        width: 100%;
+        margin: 0 0 0 7%;
+        width: 90%;
     }
     .gplp-form h3 {
         font-size: 1.75rem;
-        padding-left: 0;
+        margin: 10% 0 5%;
+        padding: 0;
         text-align: center;
-        margin-bottom: 5px;
+        position: relative;
     }
-
+    .gplp-form  div.wpcf7 {
+        margin: 0;
+        padding: 0;
+    }
     .gplp-form .row div {
         float: none;
         width: 100%;
     }
 
     .gplp-form .wide input {
-        width: 85% !important;
+        width: 100% !important;
+    }
+    .gplp-form .row div select {
+        width: 100%;
+    }
+    .gplp-form .row div input {
+        width: 100%;
     }
     .gplp-form .row input, .gplp-form .row select {
         border: 1px solid #dce39e;
@@ -355,7 +374,7 @@ footer a:hover {
         height: 40px !important;
     }
     .gplp-form .wide input.button {
-        width: 93% !important;
+        width: 100% !important;
         margin: 20px 5px 30px;
         color: #fff;
         padding: 16px 0;

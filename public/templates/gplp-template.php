@@ -68,7 +68,7 @@ load_template(dirname( __FILE__ ) . '/header-gplp.php', true);
 						}
 						?>
 					</div>
-				<footer class="entry-footer">
+				<footer class="">
 					<div class="gplp-footer-menu">
 						<?php
 							wp_nav_menu( array(

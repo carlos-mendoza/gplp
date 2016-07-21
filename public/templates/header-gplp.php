@@ -21,10 +21,10 @@
 	<?php wp_head(); ?>
 </head>
 
-<body <?php body_class(); ?>>
-<div id="page" class="site">
+<body <?php body_class('gplp'); ?>>
+<div id="landing-page" class="site">
 	<div class="site-inner">
 		<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'twentysixteen' ); ?></a>
 
 
-		<div id="content" class="site-content">
+		<div id="gplp-content" class="site-content">

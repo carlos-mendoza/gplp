@@ -6,6 +6,34 @@
 body {
 	margin: 0;
 }
+body:not(.custom-background-image)::before, body:not(.custom-background-image)::after {
+    background: inherit;
+    content: "";
+    display: block;
+    height: 0 !important;
+    left: 0;
+    position: fixed;
+    width: 100%;
+    z-index: 99;
+}
+#landing-page {
+    margin: 0;
+}
+.site-inner {
+    max-width: 100% !important;
+    width: 100% !important;
+}
+#gplp-content {
+    padding: 0 !important;
+}
+#gplp-content .content-area {
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100% !important;
+}
+.site-main {
+    margin: 0 !important;
+}
 .skip-link {
 	display: none;
 }
@@ -34,6 +62,8 @@ body {
     margin: 0;
     padding-bottom: 5px;
     padding-top: 70px;
+    font-family: 'Signika', sans-serif;
+
 }
 .gplp-subtitle {
     color: #d0fdfd;
@@ -124,13 +154,13 @@ body {
     width: 85%;
 }
 .gplp-form .row div select  {
-    width: 93%;
+    width: 85%;
 }
 .gplp-form .wide input {
     width: 90.5%;
 }
 .gplp-form .wide input.button {
-    width: 95%;
+    width: 90%;
     margin: 20px 5px 30px;
 }
 .gplp-form input.button {
@@ -169,7 +199,7 @@ body {
     display: inline-block;
     padding: 0 10px;
     text-align: center;
-    width: 30%;
+    width: 33%;
     font-weight: 100;
 }
 .gplp-feature i {

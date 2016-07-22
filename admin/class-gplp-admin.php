@@ -862,6 +862,17 @@ class Gplp_Admin {
 						'multiple' => 0
 					),
 					array (
+						'key' => 'field_578d2bcab3bee',
+						'label' => 'Show 3rd link?',
+						'name' => 'checkbox_3_show',
+						'type' => 'checkbox',
+						'choices' => array (
+							1 => 'Yes',
+						),
+						'default_value' => '',
+						'layout' => 'vertical',
+					),
+					array (
 						'key' => 'field_57892d279ad21',
 						'label' => 'Social link 3',
 						'name' => 'social_link_3',
@@ -897,6 +908,17 @@ class Gplp_Admin {
 						'default_value' => '',
 						'allow_null' => 0,
 						'multiple' => 0
+					),
+					array (
+						'key' => 'field_5792835c7407a',
+						'label' => 'Show 4th link?',
+						'name' => 'checkbox_4_show',
+						'type' => 'checkbox',
+						'choices' => array (
+							1 => 'Yes',
+						),
+						'default_value' => '',
+						'layout' => 'vertical',
 					),
 					array (
 						'key' => 'field_57892d4b9ad24',

@@ -56,23 +56,38 @@ load_template(dirname( __FILE__ ) . '/header-gplp.php', true);
 					</div>
 					<div class="gplp-social-links">
 						<?php
+						$social_links = [];
 						for ($sl=1; $sl<=4; $sl++) {
+							$social_link = '';
+								$social_link['url'] = trim(get_field('social_link_'.$sl));
+								$social_link['icon'] = get_field('social_link_'.$sl.'_icon');
+								$social_link['title'] = get_field('social_link_'.$sl.'_title');
+								$social_links[$sl] = $social_link;
+							if ($sl >2 ) {
+								$social_link['show'] = get_field('checkbox_'.$sl.'_show');
+								if ($social_link['show'] ) {
+									$social_links[$sl] = $social_link;
+								} else {
+									unset($social_links[$sl]);
+								}
+							}
+						}
+						foreach ($social_links as $social) {
 							?>
 							<div class="gplp-social-link">
 								<?php 
-								$social_link = trim(get_field('social_link_'.$sl));
-								if ($social_link) {
+								if ($social['url']) {
 								?>
-									<a href="<?php echo esc_url($social_link); ?>">
-									<i class="fa fa-<?php echo trim(get_field('social_link_'.$sl.'_icon')); ?>" aria-hidden="true"></i> 
-									<?php echo " (".trim(get_field('social_link_'.$sl.'_title')).") "; ?>
-								</a>
+									<a href="<?php echo esc_url($social['url']); ?>">
+									<i class="fa fa-<?php echo trim($social['icon']); ?>" aria-hidden="true"></i> 
+									<?php echo " (".trim($social['title']).") "; ?>
+									</a>
 							<?php
 								} else {
 								?>
 									<a href="#">
-										<i class="fa fa-<?php echo trim(get_field('social_link_'.$sl.'_icon')); ?>" aria-hidden="true"></i> 
-										<?php echo " (".trim(get_field('social_link_'.$sl.'_title')).") "; ?>
+										<i class="fa fa-<?php echo trim($social['icon']); ?>" aria-hidden="true"></i> 
+										<?php echo " (".trim($social['title']).") "; ?>
 									</a>
 								<?php
 								}

@@ -76,10 +76,9 @@ body:not(.custom-background-image)::before, body:not(.custom-background-image)::
 .gplp-main-content {
     background-color: #f7fccc;
     font-family: "Signika",sans-serif;
-    margin: 0 10%;
-    max-width: 80%;
+    margin: 0 5%;
+    max-width: 100%;
     position: relative;
-    display: inline-block;
 }
 .gplp-image{
     bottom: -30px;
@@ -92,6 +91,9 @@ body:not(.custom-background-image)::before, body:not(.custom-background-image)::
 .gplp-image img {
     border: 5px solid #fff;
     border-radius: 5px;
+    -webkit-box-shadow: 0px 0px 19px 5px rgba(0,0,0,0.15);
+    -moz-box-shadow: 0px 0px 19px 5px rgba(0,0,0,0.15);
+    box-shadow: 0px 0px 19px 5px rgba(0,0,0,0.15);
 }
 .gplp-form {
     display: grid;
@@ -100,7 +102,7 @@ body:not(.custom-background-image)::before, body:not(.custom-background-image)::
 .gplp-form h3 {
     font-size: 2rem;
     margin: 0 0 0 40%;
-    padding: 20px;
+    padding: 20px 0 20px 45px;
 }
 .gplp-form div.wpcf7 {
     background-color: #f7fccc;
@@ -125,8 +127,9 @@ body:not(.custom-background-image)::before, body:not(.custom-background-image)::
     border: 1px solid #dce39e;
     border-radius: 5px;
     color: #444;
-    font-size: 1.15rem;
-    margin: 5px;
+    font-family: "Signika",sans-serif;
+    font-weight: 100;
+    margin: 8px 5px;
     padding: 0 10px;
     width: 100%;
     height: 51px !important;
@@ -146,15 +149,27 @@ body:not(.custom-background-image)::before, body:not(.custom-background-image)::
 }
 .gplp-form input::-webkit-input-placeholder {
    color: #999;
+    font-family: "Signika",sans-serif;
+    font-weight: 100;
+    font-size: 1.15rem;
 }
 .gplp-form input:-moz-placeholder { /* Firefox 18- */
    color: #999;  
+    font-family: "Signika",sans-serif;
+    font-weight: 100;
+    font-size: 1.15rem;
 }
 .gplp-form input::-moz-placeholder {  /* Firefox 19+ */
    color: #999;  
+    font-family: "Signika",sans-serif;
+    font-weight: 100;
+    font-size: 1.15rem;
 }
 .gplp-form input:-ms-input-placeholder {  
    color: #999;  
+    font-family: "Signika",sans-serif;
+    font-weight: 100;
+    font-size: 1.15rem;
 }
 .gplp-form input.wpcf7-not-valid, .gplp-form select.wpcf7-not-valid {
     border: 1px solid #e3c09e;
@@ -180,6 +195,9 @@ body:not(.custom-background-image)::before, body:not(.custom-background-image)::
     text-transform: uppercase;
     padding: 15px;
     height: 56px !important;
+    font-family: 'Signika', sans-serif;
+    font-weight: 400;
+    font-size: 1.15rem;
 }
 .gplp-form input.button:hover {
     background-color: #005d84;
@@ -193,6 +211,19 @@ body:not(.custom-background-image)::before, body:not(.custom-background-image)::
     clear: both;
     max-width: 80%;
 }
+.gplp-form span.wpcf7-not-valid-tip {
+    color: #af0a0a;
+    padding: 0 13% 0 0;
+    text-align: right;
+    font-size: 0.75rem;
+    font-weight: 100;
+}
+.gplp-form .wide span.wpcf7-not-valid-tip {
+    color: #af0a0a;
+    padding: 0 8.5% 0 0;
+    text-align: right;
+    font-size: 0.75rem;
+}
 .gplp-features {
     background-color: #fbfbfb;
     border-bottom: 1px solid #ebebeb;
@@ -202,7 +233,6 @@ body:not(.custom-background-image)::before, body:not(.custom-background-image)::
     font-family: 'Signika', sans-serif;
     clear: both;
 }
-
 .gplp-feature {
     border-left: 1px solid #eeeeee;
     display: inline-block;
@@ -210,6 +240,7 @@ body:not(.custom-background-image)::before, body:not(.custom-background-image)::
     text-align: center;
     width: 33%;
     font-weight: 100;
+    vertical-align: top;
 }
 .gplp-feature i {
     color: #a0a0a0;
@@ -220,7 +251,7 @@ body:not(.custom-background-image)::before, body:not(.custom-background-image)::
 	color: #007fb4;
     font-size: 1.25rem;
     font-weight: 400;
-	margin: 20px 0;
+	margin: 10px 0;
 }
 .gplp-feature p {
     color: #7c7c7c;
@@ -232,11 +263,16 @@ body:not(.custom-background-image)::before, body:not(.custom-background-image)::
 	font-weight: 100;
     font-family: 'Signika', sans-serif;
 }
+.gplp-social-link:first-child {
+    border-left: none;
+}
 .gplp-social-link {
     display: inline-block;
     font-size: 0.85rem;
-    padding: 48px 0;
+    padding: 0;
     width: 22%;
+    border-left: 1px solid #eeeeee;
+    margin: 48px 0;
 }
 .gplp-social-link i {
 	font-size: 2rem;
@@ -266,10 +302,13 @@ footer a:hover {
 	display: inline-block;
 	width: 49.5%;
 }
+.gplp-footer-menu ul {
+    padding: 0;        
+} 
 .gplp-footer-menu li {
     display: inline-block;
     font-size: 0.75rem;
-    padding: 30px 20px;
+    padding: 42px 20px;
     text-transform: uppercase;
 }
 .gplp-copyright {
@@ -280,6 +319,19 @@ footer a:hover {
     width: 48%;
 }
 
+@media only screen and (max-width: 70.625em) {
+.gplp-form div.wpcf7 {
+    background-color: #f7fccc;
+    margin: 0 0 0 45%;
+    padding: 0;
+}
+.gplp-form h3 {
+    font-size: 2rem;
+    margin: 0 0 0 45%;
+    padding: 20px 0 20px 45px;
+    /* position: relative; */
+}
+}
 
 @media only screen and (max-width: 64em) { 
 
@@ -316,7 +368,7 @@ footer a:hover {
     
     .gplp-image {
         bottom: -30px;
-        display: inline-block;
+        display: table;
         float: none;
         height: auto;
         margin: 0 auto;
@@ -383,8 +435,20 @@ footer a:hover {
         height: auto !important;
     }
     .gplp-form .wpcf7-response-output {
-        margin-bottom: 35px;
-        max-width: 70%;
+        margin: 0 0 35px;
+        max-width: 90%;
+    }
+    .gplp-form span.wpcf7-not-valid-tip {
+        color: #af0a0a;
+        padding: 0 0 0;
+        text-align: right;
+        font-size: 0.75rem;
+    }
+    .gplp-form .wide span.wpcf7-not-valid-tip {
+        color: #af0a0a;
+        padding: 0 0 0;
+        text-align: right;
+        font-size: 0.75rem;
     }
     .gplp-features {
         background-color: #fbfbfb;
@@ -403,22 +467,37 @@ footer a:hover {
         text-align: center;
         width: 100%;
     }
-
+    .gplp-feature .borderbottom {
+        border-bottom: 1px solid #eeeeee;
+        margin: 15px auto 20px;
+        width: 55%;
+    }
+    .gplp-feature:last-child .borderbottom {
+        border-bottom: none;
+        margin: 0;
+    }
+    .gplp-feature h3 {
+        color: #007fb4;
+        font-size: 1.25rem;
+        font-weight: 400;
+        margin: 8px 0 10px;
+    }
     .gplp-social-link {
         display: inline-block;
         font-size: 0.85rem;
-        padding: 18px 0;
+        padding: 15px 0;
         width: 100%;
         border-bottom: 1px solid #f2f2f2;
+        margin: 0;
     }
 
     .gplp-footer-menu {
         display: inline-block;
         width: 100%;
     }
-
     .gplp-footer-menu ul {
-        padding: 0;        
+        padding: 0;
+        margin: 15px 0;
     } 
     .gplp-footer-menu li {
         display: block;

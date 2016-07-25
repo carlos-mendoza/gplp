@@ -37,8 +37,10 @@ load_template(dirname( __FILE__ ) . '/header-gplp.php', true);
 								}
 								?>
 							</div><!-- .gplp-image -->
-							<h3>Download Ebook Here</h3>
-							<?php echo do_shortcode(trim(get_field('form'))); ?>
+							<div class="form-container">
+								<h3>Download Ebook Here</h3>
+								<?php echo do_shortcode(trim(get_field('form'))); ?>
+							</div>
 						</div>
 					</div>
 					<div class="gplp-features">
@@ -49,6 +51,7 @@ load_template(dirname( __FILE__ ) . '/header-gplp.php', true);
 								<i class="fa fa-<?php echo trim(get_field('featured_icon_'.$f)); ?>" aria-hidden="true"></i> 
 								<h3><?php echo trim(get_field('featured_title_'.$f)); ?></h3>
 								<p><?php echo trim(get_field('featured_text_'.$f)); ?></p>
+								<div class="borderbottom"></div>
 							</div>
 							<?php
 						}

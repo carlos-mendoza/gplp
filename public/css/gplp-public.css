@@ -4,7 +4,7 @@
  */
 
 body {
-	margin: 0;
+    margin: 0;
 }
 body:not(.custom-background-image)::before, body:not(.custom-background-image)::after {
     background: inherit;
@@ -35,12 +35,12 @@ body:not(.custom-background-image)::before, body:not(.custom-background-image)::
     margin: 0 !important;
 }
 .skip-link {
-	display: none;
+    display: none;
 }
 .gplp-header {
-	background-color: #efeff3;
-	color: #005d84;
-	font-family: 'Signika', sans-serif;
+    background-color: #efeff3;
+    color: #005d84;
+    font-family: 'Signika', sans-serif;
 }
 .gplp-header p {
     font-size: 2.5rem;
@@ -51,10 +51,10 @@ body:not(.custom-background-image)::before, body:not(.custom-background-image)::
     text-transform: uppercase;
 }
 .gplp-title {
-	color: #fff;
-	background: url('../img/title_bg.jpg');
-	text-align: center;
-	font-family: 'Signika', sans-serif;
+    color: #fff;
+    background: url('../img/title_bg.jpg');
+    text-align: center;
+    font-family: 'Signika', sans-serif;
 }
 .gplp-title .entry-title {
     font-size: 2.5rem;
@@ -111,7 +111,8 @@ body:not(.custom-background-image)::before, body:not(.custom-background-image)::
 }
 .gplp-form form {
     margin: 0 auto 0 40px;
-    width: 100%;;
+    width: 100%;
+    display: inline-block;
 }
 .gplp-form .row {
     width: 90%;
@@ -248,10 +249,10 @@ body:not(.custom-background-image)::before, body:not(.custom-background-image)::
     margin-top: 15px;
 }
 .gplp-feature h3 {
-	color: #007fb4;
+    color: #007fb4;
     font-size: 1.25rem;
     font-weight: 400;
-	margin: 10px 0;
+    margin: 10px 0;
 }
 .gplp-feature p {
     color: #7c7c7c;
@@ -259,8 +260,8 @@ body:not(.custom-background-image)::before, body:not(.custom-background-image)::
     padding-bottom: 20px;
 }
 .gplp-social-links {
-	text-align: center;
-	font-weight: 100;
+    text-align: center;
+    font-weight: 100;
     font-family: 'Signika', sans-serif;
 }
 .gplp-social-link:first-child {
@@ -275,7 +276,7 @@ body:not(.custom-background-image)::before, body:not(.custom-background-image)::
     margin: 48px 0;
 }
 .gplp-social-link i {
-	font-size: 2rem;
+    font-size: 2rem;
 }
 .gplp-social-link a {
     color: #323232;
@@ -284,26 +285,28 @@ body:not(.custom-background-image)::before, body:not(.custom-background-image)::
     text-transform: uppercase;
 }
 .gplp-social-link a:hover {
-	color: #007fb4;
+    color: #007fb4;
 }
 footer {
-	background-color: #143839;
-	color: #919b9c;
+    background-color: #143839;
+    color: #919b9c;
     font-family: 'Signika', sans-serif;
 }
 footer a {
-	color: #98bfbf;
-	text-decoration: none;
+    color: #98bfbf;
+    text-decoration: none;
+    font-weight: 100;
 }
 footer a:hover {
-	color: #fff;
+    color: #fff;
 }
 .gplp-footer-menu {
-	display: inline-block;
-	width: 49.5%;
+    display: inline-block;
+    width: 49.5%;
 }
 .gplp-footer-menu ul {
-    padding: 0;        
+    padding: 0;
+    margin: 0;
 } 
 .gplp-footer-menu li {
     display: inline-block;

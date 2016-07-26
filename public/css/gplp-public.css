@@ -76,9 +76,10 @@ body:not(.custom-background-image)::before, body:not(.custom-background-image)::
 .gplp-main-content {
     background-color: #f7fccc;
     font-family: "Signika",sans-serif;
-    margin: 0 5%;
+    margin: 0 9%;
     max-width: 100%;
     position: relative;
+    border-right: 1px solid #e7edb1;
 }
 .gplp-image{
     bottom: -30px;
@@ -130,7 +131,7 @@ body:not(.custom-background-image)::before, body:not(.custom-background-image)::
     color: #444;
     font-family: "Signika",sans-serif;
     font-weight: 100;
-    margin: 8px 5px;
+    margin: 13px 5px 5px;
     padding: 0 10px;
     width: 100%;
     height: 51px !important;
@@ -211,6 +212,7 @@ body:not(.custom-background-image)::before, body:not(.custom-background-image)::
 .gplp-form .wpcf7-response-output {
     clear: both;
     max-width: 80%;
+    display: none !important;
 }
 .gplp-form span.wpcf7-not-valid-tip {
     color: #af0a0a;

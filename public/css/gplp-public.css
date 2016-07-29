@@ -76,7 +76,7 @@ body:not(.custom-background-image)::before, body:not(.custom-background-image)::
 .gplp-main-content {
     background-color: #f7fccc;
     font-family: "Signika",sans-serif;
-    margin: 0 9%;
+    margin: 0 8%;
     max-width: 100%;
     position: relative;
     border-right: 1px solid #e7edb1;
@@ -101,17 +101,18 @@ body:not(.custom-background-image)::before, body:not(.custom-background-image)::
     background-color: #f7fccc;
 }
 .gplp-form h3 {
-    font-size: 2rem;
+    font-size: 1.75rem;
+    font-weight: 400;
     margin: 0 0 0 40%;
-    padding: 20px 0 20px 45px;
+    padding: 20px 0 5px 5px;
 }
 .gplp-form div.wpcf7 {
     background-color: #f7fccc;
-    margin: 0 0 0 40%;
+    margin: 0 0 0 39.5%;
     padding: 0;
 }
 .gplp-form form {
-    margin: 0 auto 0 40px;
+    margin: 0 auto 0 10px;
     width: 100%;
     display: inline-block;
 }
@@ -120,7 +121,8 @@ body:not(.custom-background-image)::before, body:not(.custom-background-image)::
 }
 .gplp-form .row div {
     float: left;
-    width: 49%;
+    padding-right: 20px;
+    width: 50%;
 }
 .gplp-form .wide div {
     width: 100%;
@@ -131,10 +133,11 @@ body:not(.custom-background-image)::before, body:not(.custom-background-image)::
     color: #444;
     font-family: "Signika",sans-serif;
     font-weight: 100;
-    margin: 13px 5px 5px;
-    padding: 0 10px;
+    margin: 13px 0 5px;
+    padding: 0 10px 0 20px;
     width: 100%;
     height: 51px !important;
+    background-color: #fff;
 }
 .gplp-form .row select {
     border: 1px solid #dce39e;
@@ -177,16 +180,16 @@ body:not(.custom-background-image)::before, body:not(.custom-background-image)::
     border: 1px solid #e3c09e;
 }
 .gplp-form .row div input {
-    width: 85%;
+    width: 100%;
 }
 .gplp-form .row div select  {
-    width: 85%;
+    width: 100%;
 }
 .gplp-form .wide input {
-    width: 90.5%;
+    width: 97%;
 }
 .gplp-form .wide input.button {
-    width: 90%;
+    width: 99%;
     margin: 20px 5px 30px;
 }
 .gplp-form input.button {
@@ -279,6 +282,7 @@ body:not(.custom-background-image)::before, body:not(.custom-background-image)::
 }
 .gplp-social-link i {
     font-size: 2rem;
+    margin-right: 8px;
 }
 .gplp-social-link a {
     color: #323232;
@@ -325,17 +329,21 @@ footer a:hover {
 }
 
 @media only screen and (max-width: 70.625em) {
-.gplp-form div.wpcf7 {
-    background-color: #f7fccc;
-    margin: 0 0 0 45%;
-    padding: 0;
-}
-.gplp-form h3 {
-    font-size: 2rem;
-    margin: 0 0 0 45%;
-    padding: 20px 0 20px 45px;
-    /* position: relative; */
-}
+    .gplp-form div.wpcf7 {
+        background-color: #f7fccc;
+        margin: 0 0 0 45%;
+        padding: 0;
+    }
+    .gplp-form h3 {
+        font-size: 2rem;
+        margin: 0 0 0 45%;
+        padding: 20px 0 20px 45px;
+        /* position: relative; */
+    }
+    .gplp-form .wide input {
+        width: 97.25% !important;
+    }
+
 }
 
 @media only screen and (max-width: 64em) { 
@@ -411,8 +419,8 @@ footer a:hover {
     .gplp-form .row div {
         float: none;
         width: 100%;
+        padding: 0;
     }
-
     .gplp-form .wide input {
         width: 100% !important;
     }
